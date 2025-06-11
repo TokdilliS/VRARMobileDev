@@ -12,14 +12,15 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class Screen(val route: String, val titel: String, val icon: ImageVector) {
         object ContactList : Screen("contactList", "Kontakte", Icons.Default.List)
-        // Objekt für die Detailansicht - wird nicht direkt in der Bottom Bar verwendet,
-        // aber ist wichtig für die Navigation dorthin.
-        object Detail : Screen("contactDetail", "Details", Icons.Default.AccountBox)
-        // Objekt für "Kontakt hinzufügen" - wird nicht direkt in der Bottom Bar verwendet,
-        // da du stattdessen den QR-Scanner dort haben möchtest.
+
+        // ÄNDERE DIESES OBJEKT: Passe den Route-String an
+        object Detail : Screen("contact_detail", "Details", Icons.Default.AccountBox){ // <<< HIER GEÄNDERT!
+                fun createRoute(contactId: Int) = "contact_detail/$contactId"
+        }
+
+        // Wenn du einen separaten "AddContact"-Screen hast
         object AddContact : Screen("addContact", "Hinzufuegen", Icons.Default.Add)
 
-        // NEU: Objekt für den QR-Scanner, der in der Bottom Bar erscheinen soll
         object QRScanner : Screen("qrScanner", "Scan", Icons.Default.Add)
 
         object Settings : Screen("settings", "Einstellungen",Icons.Default.Settings)

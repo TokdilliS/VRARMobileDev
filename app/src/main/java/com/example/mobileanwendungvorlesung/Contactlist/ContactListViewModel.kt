@@ -27,10 +27,9 @@ class ContactListViewModel(private val contactRepository: ContactRepository) : V
             )
 
     // Funktion zum Hinzufügen eines Kontakts (falls von der Liste aus möglich, z.B. über Floating Action Button)
-    fun addContact(contact: Contact) {
-        viewModelScope.launch {
-            contactRepository.insertContact(contact)
-        }
+   suspend fun addContact(contact: Contact): Int {
+       val newId = contactRepository.insertContact(contact)
+        return newId.toInt()
     }
 
     // Funktion zum Löschen eines Kontakts

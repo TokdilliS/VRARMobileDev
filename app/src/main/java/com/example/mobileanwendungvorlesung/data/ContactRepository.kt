@@ -25,7 +25,7 @@ class ContactRepository(
     fun getAllContactsStream(): Flow<List<Contact>> = contactDao.getAll()
     fun getContactStream(id: Int): Flow<Contact?> = contactDao.getContact(id)
 
-    suspend fun insertContact(contact: Contact) = contactDao.insert(contact)
+    suspend fun insertContact(contact: Contact): Long = contactDao.insert(contact)
     suspend fun deleteContact(contact: Contact) = contactDao.delete(contact)
     suspend fun updateContact(contact: Contact) = contactDao.update(contact)
     suspend fun deleteAllContacts() = contactDao.deleteAllContacts()

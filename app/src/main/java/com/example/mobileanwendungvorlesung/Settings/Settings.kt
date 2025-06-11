@@ -1,11 +1,14 @@
 // src/main/java/com/example/mobileanwendungvorlesung/Settings/Settings.kt
 package com.example.mobileanwendungvorlesung.Settings
 
+import android.R.attr.padding
 import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -21,12 +24,16 @@ fun SettingsScreen( // <<< Geändert: Name von ShowSettings zu SettingsScreen
     settingsViewModel: SettingsViewModel = viewModel(), // Standardwert, wird von MainActivity überschrieben
     modifier: Modifier = Modifier
 ) {
-    Column {
+    Column(
+        modifier = modifier
+            .fillMaxSize() // Stellt sicher, dass die Spalte den gesamten verfügbaren Platz einnimmt
+            .padding(16.dp)
+    ) {
+
         Box()
         {
             Text(
                 text = "Einstellungen",
-                modifier = Modifier,
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
 

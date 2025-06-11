@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
@@ -65,19 +66,40 @@ fun ContactDetailScreen(
                 model = contact.imageRes, // Die URL aus deinem Contact-Objekt
                 contentDescription = "Profilbild von ${contact.name}",
                 modifier = Modifier
-                    .size(150.dp) // Beispielgröße
+                    .size(200.dp) // Beispielgröße
                     .clip(CircleShape), // Stelle sicher, dass du CircleShape importiert hast
                 contentScale = ContentScale.Crop // Bild zuschneiden, um Kreis zu füllen
             )
 
-            Text(text = "Details für: ${contact.name}")
+            Text(
+                text = "Details für: ${contact.name}",
+                style = MaterialTheme.typography.headlineSmall
+            )
             Spacer(Modifier.height(8.dp))
-            Text(text = "Telefon: ${contact.phone}")
-            Text(text = "E-Mail: ${contact.email}")
-            Text(text = "Strasse: ${contact.street}")
-            Text(text = "HausNr.: ${contact.houseNr}")
-            Text(text = "PLZ.: ${contact.postcode}")
-            Text(text = "Stadt.: ${contact.city}")
+            Text(
+                text = "Telefon: ${contact.phone}",
+                fontSize = 18.sp
+            )
+            Text(
+                text = "E-Mail: ${contact.email}",
+                fontSize = 18.sp
+            )
+            Text(
+                text = "Strasse: ${contact.street}",
+                fontSize = 18.sp
+            )
+            Text(
+                text = "HausNr.: ${contact.houseNr}",
+                fontSize = 18.sp
+            )
+            Text(
+                text = "PLZ.: ${contact.postcode}",
+                fontSize = 18.sp
+            )
+            Text(
+                text = "Stadt.: ${contact.city}",
+                fontSize = 18.sp
+            )
 
             Spacer(Modifier.height(24.dp))
 

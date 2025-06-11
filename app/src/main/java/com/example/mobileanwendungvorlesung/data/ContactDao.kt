@@ -22,7 +22,7 @@ interface ContactDao {
     suspend fun getAllContactsList(): List<Contact>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(contact: Contact) // <<< Geändert: Vereinfacht von insertContact
+    suspend fun insert(contact: Contact): Long // <<< Geändert: Vereinfacht von insertContact
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(contacts: List<Contact>)

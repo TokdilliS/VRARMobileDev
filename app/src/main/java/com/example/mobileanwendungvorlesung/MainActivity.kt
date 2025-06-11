@@ -34,6 +34,10 @@ import com.example.mobileanwendungvorlesung.QRScanner.QRCodeScannerScreen
 // Import für LocalContext
 import androidx.compose.ui.platform.LocalContext
 import android.app.Application // Diesen Import auch sicherstellen
+import android.util.Log
+import androidx.lifecycle.lifecycleScope
+import com.example.mobileanwendungvorlesung.QRScanner.QRScanViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
@@ -71,6 +75,7 @@ class MainActivity : ComponentActivity() {
                 startDestination = Screen.ContactList.route,
                 modifier = Modifier.padding(paddingValues)
             ) {
+
                 composable(Screen.ContactList.route) {
                     val contactListViewModel: ContactListViewModel = viewModel(
                         factory = ContactListViewModel.create(appContainer.contactRepository)
@@ -78,13 +83,14 @@ class MainActivity : ComponentActivity() {
                     ContactListScreen(
                         contactListViewModel = contactListViewModel,
                         onContactClick = { contact ->
-                            navController.navigate("contactDetail/${contact.id}")
+                            // Korrekte Navigation zur Detailansicht unter Verwendung der ID
+                            navController.navigate(Screen.Detail.createRoute(contact.id))
                         }
                     )
                 }
 
                 composable(
-                    "contactDetail/{contactId}",
+                    route = Screen.Detail.route + "/{contactId}",
                     arguments = listOf(navArgument("contactId") { type = NavType.IntType })
                 ) { backStackEntry ->
                     val contactId = backStackEntry.arguments?.getInt("contactId")
@@ -99,6 +105,9 @@ class MainActivity : ComponentActivity() {
                             contactDetailViewModel = contactDetailViewModel,
                             onNavigateBack = { navController.popBackStack() }
                         )
+                    } else {
+                        Log.e("Navigation", "ContactDetailScreen called without contactId")
+                        navController.popBackStack() // Oder navigiere zur Kontaktliste
                     }
                 }
 
@@ -106,17 +115,23 @@ class MainActivity : ComponentActivity() {
                     val contactListViewModel: ContactListViewModel = viewModel(
                         factory = ContactListViewModel.create(appContainer.contactRepository)
                     )
+                    val qrScanViewModel: QRScanViewModel = viewModel(
+                        factory = QRScanViewModel.Factory(appContainer.contactRepository)
+                    )
                     QRCodeScannerScreen(
                         onScanSuccess = { contact ->
-                            contactListViewModel.addContact(contact)
-                            navController.navigate(Screen.ContactList.route) {
-                                popUpTo(Screen.ContactList.route) {
-                                    inclusive = true
+                            navController.currentBackStackEntry?.lifecycleScope?.launch {
+                                val newContactId = contactListViewModel.addContact(contact)
+                                navController.navigate(Screen.Detail.createRoute(newContactId)) {
+                                    popUpTo(Screen.QRScanner.route) {
+                                        inclusive = true
+                                    }
+                                    launchSingleTop = true
                                 }
-                                launchSingleTop = true
                             }
                         },
-                        onBack = { navController.popBackStack() }
+                        onBack = { navController.popBackStack() },
+                        viewModel = qrScanViewModel
                     )
                 }
 
