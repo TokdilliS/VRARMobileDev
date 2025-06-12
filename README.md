@@ -1,10 +1,11 @@
 Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät gebaut und getestet werden.
 
 <h1>Anleitung</h1>
-App starten.
+<li>App starten</li>
+<br>
 <img src="https://github.com/user-attachments/assets/e53da455-2601-47bf-a796-4be757a9bb1d" width="500" height="1000">
 <br>
-Sobald die APP gestartet ist wird die Konkatliste angezeigt. Hier werden alle Kontakte aufgelistet.
+<li>Sobald die APP gestartet ist wird die Konkatliste angezeigt. Hier werden alle Kontakte aufgelistet.</li>
 <img src="https://github.com/user-attachments/assets/a5f743d2-24e4-4cea-a7e3-d4a1d3966e91"width="500" height="1000> 
 <br>
 Achtung!! Falls diese Liste leer ist
