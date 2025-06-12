@@ -7,7 +7,7 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <br>
 <li>Sobald die APP gestartet ist wird die Konkatliste angezeigt. Hier werden alle Kontakte aufgelistet.</li>
 <br>
-<img src="https://github.com/user-attachments/assets/a5f743d2-24e4-4cea-a7e3-d4a1d3966e91"width="500" height="1000"> 
+<img src="https://github.com/user-attachments/assets/5c4662f8-3eaf-465a-a5d4-027d72967b50"width="500" height="1000"> 
 <br>
 <li><b>Achtung!!!</b> Falls diese Liste leer ist </li>
 <li> -> zu Einstellungen Wechseln, und auf den Button "Kontakte neu laden (API)" Klicken, Die app lädt 20 neue Kontakte und speichert diese in der DB. </li>
@@ -17,4 +17,6 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <li> Jetzt wieder zurück zu den "Kontakten" wechseln</li>
 <br>
 <img src="https://github.com/user-attachments/assets/730faa65-95ff-4a58-ab72-47dcd9037f4f" width="500" height="1000">
+<br>
+<img src="https://github.com/user-attachments/assets/a5f743d2-24e4-4cea-a7e3-d4a1d3966e91"width="500" height="1000">
 
