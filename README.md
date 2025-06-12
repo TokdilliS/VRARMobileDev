@@ -18,5 +18,7 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <br>
 <img src="https://github.com/user-attachments/assets/730faa65-95ff-4a58-ab72-47dcd9037f4f" width="500" height="1000">
 <br>
+<li> Jetzt sollten 20 Kontakte sichtbar sein</li>
+<br>
 <img src="https://github.com/user-attachments/assets/a5f743d2-24e4-4cea-a7e3-d4a1d3966e91"width="500" height="1000">
-
+<br>
