@@ -49,6 +49,14 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <img src="https://github.com/user-attachments/assets/e5a193d7-646b-4f39-bc79-dd14805104a6"width="500" height="1000">
 <br>
 <img src="https://github.com/user-attachments/assets/b57b30ec-7715-4b4d-9b66-15661ec82cbf"width="500" height="1000">
+<br>
+<h2>Einstellungen</h2>
+<br>
+<li>Hier kann über die "Datenbank Leeren" Button die daten in der Datenbank geleert werden.</li>
+<li>Über den "Kontakte neu laden (API)" Button können neue Kontakte aus Randomuser.me geladen werden. Es werden jedes mal 20 neue Kontakte geladen und in der DB gespeichtert.</li>
+<li>Über "Kontakte exportieren" Button können die Daten aus der DB als JSON Datei auf dem Smartphone heruntergeladen werden.</li>
+<br>
+<img src="https://github.com/user-attachments/assets/835c1bb0-75ff-4ea0-bc0b-a807043b0dd0"width="500" height="1000">
 
 
 
