@@ -38,6 +38,20 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <img src="https://github.com/user-attachments/assets/d0bf4d6b-f7d7-465d-b81e-80d197131179"width="500" height="1000">
 <br>
 <h2> Kontakt scannen/hinzufügen</h2>  
+<br>
+<li> Unten auf das Plus Icon klicken</li>
+<br>
+<img src="https://github.com/user-attachments/assets/a3af1e56-f777-436f-884d-6e10322e378a"width="500" height="1000">
+<br>
+<li>Hier kann dann ein passender QR-Code gesannt werden und ein Kontakt zu den Liste/DB hinzugefügt werden</li>
+<li>Sobald der Scan erfolgreich war wird der nue Kontakt in der Detailansicht angezeigt</li>
+<br>
+<img src="https://github.com/user-attachments/assets/e5a193d7-646b-4f39-bc79-dd14805104a6"width="500" height="1000">
+<br>
+<img src="https://github.com/user-attachments/assets/b57b30ec-7715-4b4d-9b66-15661ec82cbf"width="500" height="1000">
+
+
+
 
 
 
