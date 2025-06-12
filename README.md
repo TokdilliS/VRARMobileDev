@@ -1,6 +1,7 @@
 Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät gebaut und getestet werden.
 
 <h1>Anleitung</h1>
+<h2>Kontakte anzeigen</h2>
 <li>App starten</li>
 <br>
 <img src="https://github.com/user-attachments/assets/e53da455-2601-47bf-a796-4be757a9bb1d" width="500" height="1000">
@@ -22,3 +23,13 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <br>
 <img src="https://github.com/user-attachments/assets/a5f743d2-24e4-4cea-a7e3-d4a1d3966e91"width="500" height="1000">
 <br>
+<br>
+<li>Um die Kontaktdetails zu sehen einmal auf ein gewünschten Kontakt klicken</li>
+<br>
+<img src="https://github.com/user-attachments/assets/1df9cff9-e557-412d-9397-50be51fe811a"width="500" height="1000">
+<br>
+<h2>Kontaktdetailansicht</h2>
+<br>
+<img src="https://github.com/user-attachments/assets/3c14bd06-8d06-48a6-9687-b675cc8c666d"width="500" height="1000">
+
+
