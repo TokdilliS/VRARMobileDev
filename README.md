@@ -26,7 +26,7 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <br>
 <li>Um die Kontaktdetails zu sehen einmal auf ein gewünschten Kontakt klicken</li>
 <br>
-<img src="https://github.com/user-attachments/assets/1df9cff9-e557-412d-9397-50be51fe811a"width="500" height="1000">
+<img src="https://github.com/user-attachments/assets/c81db39b-ff5b-4292-8849-e792ec100f28"width="500" height="1000">
 <br>
 <h2>Kontaktdetailansicht</h2>
 <br>
