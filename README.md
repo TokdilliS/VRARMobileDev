@@ -31,5 +31,16 @@ Die App benötigt keine weiteren Aktionen. Diese muss lediglich auf das Gerät g
 <h2>Kontaktdetailansicht</h2>
 <br>
 <img src="https://github.com/user-attachments/assets/3c14bd06-8d06-48a6-9687-b675cc8c666d"width="500" height="1000">
+<br>
+<li>Um den QR Code zu generieren bitte auf "QR Code generieren" klicken. Sobald dieser erzeugt wurde wird er in einem Fenster angezeigt und ist bereit zum scannen.</li>
+<img src="https://github.com/user-attachments/assets/482b4d51-8582-4635-9c57-45d77b80b60c"width="500" height="1000">
+<br>
+<img src="https://github.com/user-attachments/assets/d0bf4d6b-f7d7-465d-b81e-80d197131179"width="500" height="1000">
+<br>
+<h2> Kontakt scannen/hinzufügen</h2>  
+
+
+
+
 
 
