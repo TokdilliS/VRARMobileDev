@@ -9,5 +9,5 @@ Achtung!! Falls diese Liste leer ist
 -> zu Einstellungen Wechseln, und auf den Button "Kontakte neu laden (API)" Klicken, Die app lädt 20 neue Kontakte und speichert diese in der DB. 
 ![sc 3](https://github.com/user-attachments/assets/cdc9510f-b7be-40c4-a583-da0a27656662)
 -> Jetzt wieder zurück zu den "Kontakten" wechseln
-<img src="https://github.com/user-attachments/assets/730faa65-95ff-4a58-ab72-47dcd9037f4f" width="500" height="750">
+<img src="https://github.com/user-attachments/assets/730faa65-95ff-4a58-ab72-47dcd9037f4f" size="40%">
 
